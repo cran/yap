@@ -23,7 +23,7 @@
 #' }
 
 pnn.optmiz_logl <- function(net, lower = 0, upper, nfolds = 4, seed = 1, method = 1) {
-  if (class(net) != "Probabilistic Neural Net") stop("net needs to be a PNN.", call. = F)
+  if (class(net) != "Probabilistic Neural Net") stop("net needs to be a PNN object.", call. = F)
   if (!(method %in% c(1, 2))) stop("the method is not supported.", call. = F)
 
   fd <- folds(seq(nrow(net$x)), n = nfolds, seed = seed)

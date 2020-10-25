@@ -17,7 +17,8 @@
 #' pnn.search_logl(pnet, c(0.5, 1), nfolds = 2)
 
 pnn.search_logl <- function(net, sigmas, nfolds = 4, seed = 1) {
-  if (class(net) != "Probabilistic Neural Net") stop("net needs to be a PNN.", call. = F)
+
+  if (class(net) != "Probabilistic Neural Net") stop("net needs to be a PNN object.", call. = F)
   if (is.vector(sigmas) != T) stop("sigmas needs to be a vector.", call. = F)
 
   fd <- folds(seq(nrow(net$x)), n = nfolds, seed = seed)

@@ -1,4 +1,4 @@
-9335addad21f187617ec0894e863f1f2 *DESCRIPTION
+60249bdee4d2aa7f6162a2d9df2c2980 *DESCRIPTION
 df3da7b1da43429a4849d8d26611caa2 *NAMESPACE
 5eabb6f8121e99badfd4921d7ea94262 *R/dummies.R
 da995ba063a9f6cd1dd750a170f983fc *R/folds.R
@@ -8,12 +8,13 @@ dfb891a43d7be8ac603b6fd5e00056ec *R/gen_unifm.R
 9e9991baa867116d629b6d8caa1ba360 *R/logl.R
 0b75cfdc4324a05a6ed038590937c125 *R/pnn.fit.R
 049fff07404a2bad733555d5c8c4c01c *R/pnn.imp.R
-9116de16109c0bdc7ff1b0151bb1996e *R/pnn.optmiz_logl.R
+7ff394114a479c5f2559f7757b093be7 *R/pnn.optmiz_logl.R
 eb1cfd58cda60aefe5287064310d374d *R/pnn.parpred.R
 80fcdba7f03a23c8940952d1fa62057f *R/pnn.pfi.R
 5f6b0f8034fc41153da83706169f6d16 *R/pnn.predict.R
-d99c82880c2e21e1eab43048a222e8e8 *R/pnn.predone.R
-b4cee8dffb9a8c78c7fc8a34c2b7487d *R/pnn.search_logl.R
+14988ec1d776b2ea7c37be5c3b7dcc3a *R/pnn.predone.R
+d99c82880c2e21e1eab43048a222e8e8 *R/pnn.predonev1.R
+03c8068ae6e66e3d164916698f3020ed *R/pnn.search_logl.R
 cb62728419fee7e1c3edd56bc2bf4ef9 *R/pnn.x_imp.R
 99801efc862d7e89acadfec11eaf801e *R/pnn.x_pfi.R
 2b37078138db32c06d973ed9ac3e409d *man/dummies.Rd
@@ -28,7 +29,7 @@ f9e80d69302d71163a2757852d3762a5 *man/pnn.optmiz_logl.Rd
 6b63adcec4bd1291bc24737aa1b86072 *man/pnn.parpred.Rd
 398700d03a2362204b51a6221e3d2a62 *man/pnn.pfi.Rd
 4d1693738272bfd6681279446e801cd4 *man/pnn.predict.Rd
-f3a4130de51af8863cc68d93c0c8953f *man/pnn.predone.Rd
+15e4b1161fb831e504af4c670bde671d *man/pnn.predone.Rd
 96b1fd4f379bb8e2571c2a3c270bf09f *man/pnn.search_logl.Rd
 8eb8f9c75919fefd0bff83acf55ca66b *man/pnn.x_imp.Rd
 d5b7c071fb673583dc4a31f0cccacd30 *man/pnn.x_pfi.Rd

@@ -17,18 +17,13 @@
 #' for (i in seq(5)) print(pnn.predone(pnet, X[i, ]))
 
 pnn.predone <- function(net, x) {
-
   if (class(net) != "Probabilistic Neural Net") stop("net needs to be a PNN object.", call. = F)
 
   cn <- ncol(net$y.ind)
-  xl <- matrix(rep(x, nrow(net$x)), nrow = nrow(net$x), byrow = TRUE)
-  d <- sum(exp(-rowSums((xl - net$x) ^ 2) / (2 * (net$sigma ^ 2))))
+  xl <- split(net$x, seq(nrow(net$x)))
+  d <- sum(exp(-Reduce(c, lapply(xl, function(xi) sum((x - xi) ^ 2))) / (2 * (net$sigma ^ 2))))
   n <- lapply(seq(cn), 
-         function(i) sum(net$y.ind[, i] * exp(-rowSums((xl - net$x) ^ 2) / (2 * (net$sigma ^ 2)))))
-#  xl <- split(net$x, seq(nrow(net$x)))
-#  d <- sum(exp(-Reduce(c, lapply(xl, function(xi) sum((x - xi) ^ 2))) / (2 * (net$sigma ^ 2))))
-#  n <- lapply(seq(cn), 
-#         function(i) sum(net$y.ind[, i] * exp(-Reduce(c, lapply(xl, function(xi) sum((x - xi) ^ 2))) / (2 * (net$sigma ^ 2)))))
+         function(i) sum(net$y.ind[, i] * exp(-Reduce(c, lapply(xl, function(xi) sum((x - xi) ^ 2))) / (2 * (net$sigma ^ 2)))))
   p <- matrix(unlist(n) / d, ncol = cn)
   colnames(p) <- colnames(net$y.ind) 
   return(p)

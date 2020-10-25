@@ -1,6 +1,6 @@
 Package: yap
 Title: Yet Another Probabilistic Neural Network
-Version: 0.1.0
+Version: 0.1.1
 Author: WenSui Liu
 Maintainer: WenSui Liu <liuwensui@gmail.com>
 Description: Another implementation of probabilistic neural network in R
@@ -12,8 +12,8 @@ Imports: stats, randtoolbox, lhs, parallel, datasets
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2020-01-08 03:09:02 UTC; liuwensui
+Packaged: 2020-10-25 20:16:51 UTC; liuwensui
 Repository: CRAN
-Date/Publication: 2020-01-15 09:50:02 UTC
+Date/Publication: 2020-10-25 20:30:02 UTC
